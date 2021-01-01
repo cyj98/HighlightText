@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+      #wd-content-display {
+        white-space: pre-line;
+        word-break: break-word;
+      }
+      .wd-not-traverse {
+        flex-basis: 100%;
+        border: 1px solid black;
+        height: 100vh;
+        overflow: auto;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: space-between">
+      <div style="display: flex; flex-direction: column; flex-basis: 100%">
+        <div>This is a page to show unknown words, Please use with or</div>
+        <input id="input-file" type="file" />
+        <textarea id="input-text" style="flex-grow: 1" name="" cols="30" rows="10"></textarea>
+      </div>
+      <div id="wd-display" style="display: flex; flex-basis: 200%">
+        <div id="wd-content-display" class="wd-not-traverse"></div>
+        <div id="wd-words-found-display" class="wd-not-traverse">
+          <table>
+            <tr>
+              <th>index</th>
+              <th>word</th>
+              <th>rank</th>
+              <th>frequency</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
