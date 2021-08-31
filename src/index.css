@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+#wd-content-display {
+  white-space: pre-line;
+  word-break: break-word;
+}
+.wd-not-traverse {
+  border: 1px solid black;
+  height: 100vh;
+  overflow: auto;
+}
