@@ -161,10 +161,10 @@ const observeUnhighlight = (el: HTMLElement) => {
 
 const changeContent = (textContent) => {
   // document.getElementById('wd-content-display').textContent = textContent;
-  const contentSpan = document.createElement('div');
+  const contentSpan = document.createElement('span');
   contentSpan.textContent = textContent;
-  contentSpan.id = `content`;
-  document.getElementById('content').replaceWith(contentSpan);
+  contentSpan.id = `text-content`;
+  document.getElementById('text-content').replaceWith(contentSpan);
   // wait until fully replace
   setTimeout(() => {
     const highlightedWords = {} as HighlightedWords;

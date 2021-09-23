@@ -5,6 +5,7 @@ body {
 #wd-content-display {
   white-space: pre-line;
   word-break: break-word;
+  display: flex;
 }
 .wd-not-traverse {
   border: 1px solid black;
